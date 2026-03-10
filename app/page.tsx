@@ -389,7 +389,7 @@ export default function Home() {
         const img = await loadImageFromUrl(url);
         const offset = offsets[i] ?? DEFAULT_OFFSET;
         const zoom = zooms[i] ?? DEFAULT_ZOOM;
-        drawCoverWithPositionAndZoom(ctx, img, x, y, cellW, cellH, offset, zoom);
+       drawCoverWithOffsetAndZoom(ctx, img, x, y, cellW, cellH, offset, zoom);
       } catch {}
     }
 
